@@ -103,3 +103,7 @@ class Science_Core:
         # Conduct queued experiments
         self.Conduct_Science()
         self.Transmit_Science()
+
+    def Run(self) -> None:
+        while True:
+            if self.vessel.met > 10: self.Detect_Science()
